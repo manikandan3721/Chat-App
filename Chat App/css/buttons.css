@@ -1,0 +1,29 @@
+.btn {
+    border: none;
+    outline: none;
+    background: none;
+    user-select: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 9px 9px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.btn.btn-primary {
+    color:var( --c-green);
+    background-color: var(--c-pale-mint);
+}
+
+.search-btn {
+    padding: 13px 15px;
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+}
+
+.btn.btn-secondary {
+    color: var(--c-white);
+    background-color: var(--c-bg-primary);
+    border-radius: var(--br-radius-lg);
+}

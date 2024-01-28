@@ -1,0 +1,133 @@
+
+.chat-list-sidebar {
+    width: var(--w-chat-sidebar);
+    color: var(--c-simply-gray);
+    background-color: var(--c-white);
+}
+
+.chat-list-header {
+    padding: 24px 24px 0 24px;
+}
+
+.chat-title-container {
+    display: flex;
+    align-items: start;
+    margin-bottom: 20px;
+}
+
+.chat-title {
+    color: inherit;
+}
+
+.form-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+    background-color: var(--c-lavender-mist);
+}
+
+.search-input {
+    padding: 12px 15px ;
+    flex-grow: 1;
+    font-family:  var(--font-regular);
+    background-color: var(--c-lavender-mist);
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+    outline: none;
+    border: none;
+}
+
+.chat-list-container {
+    max-height: calc(100vh - 135px);
+}
+
+.favorites-title {
+    padding: 0 24px;
+    margin-top: 36px;
+    margin-bottom: 16px;
+} 
+
+.user-list-link, .channel-list-link {
+    padding: 5px 24px; 
+    display: block;
+    font-family: var(--font-regular);
+    color: var(--text);
+}
+
+.user-lists .selected {
+    color: var(--c-white); 
+    background-color: var(--c-bg-primary);
+    font-family: var(--font-sbold);
+}
+
+.chat-user-item {
+    display: flex;
+    align-items: center;
+}
+
+.user-avatar, .channel-avatar {
+    display: flex;
+    position: relative;
+    margin-right: 8px;
+}
+
+.user-avatar-img {
+    height: 28px;
+    width: 28px;
+    border-radius: var(--br-radius-full);
+}
+
+.user-status {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 10px;
+    height: 10px;
+    border-radius: var(--br-radius-full);
+    border: 2px solid var(--c-white);
+    background-color: var(--c-teal);
+}
+
+.unread-msg-count {
+    padding: 3px;
+    border-radius: var(--br-radius-sm);
+    font-size: 11px;
+    font-family: var(--font-sbold);  
+    background-color: var(--c-pale-blue);
+}
+
+.selected .unread-msg-count  {
+    background-color: rgba(246,246,249,.25);
+}
+
+.user-label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-sbold);
+    width: 28px;
+    height: 28px;
+    font-size: 12px;
+    border-radius: var(--br-radius-full);
+    color: var(--c-white);
+    background-color: var(--c-bg-primary);
+}
+
+.channel-container,
+.direct-msg-container {
+   display: flex;
+   align-items: center;
+   margin-top: 48px;
+   padding: 0 24px;
+   margin-bottom: 8px;
+}
+
+.container-title {
+    text-transform: uppercase;
+    color: var(--c-grayish-Blue);
+}
+
+.channel-tag {
+    background-color: var(--c-off-white);
+    color: inherit;
+}

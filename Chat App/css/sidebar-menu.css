@@ -1,0 +1,40 @@
+
+.app-left-menu {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 8px;
+    text-align: center;
+    width: var(--w-sidebar-menu);
+    background-color: var(--c-dark-gray);
+}
+
+.left-menu {
+    height: 100%;
+}
+
+.menu-items {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.logo-container, .menu-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    font-size: 28px;
+    color: var(--c-light-slate-gray); 
+}
+
+.menu-link:active {
+    color: var(--c-bg-primary);
+}
+
+.user-profile {
+    width: 36px;
+    height: 36px;
+    padding: 3px;
+    border-radius: var(--br-radius-full);
+    background-color: var(--c-white);
+}

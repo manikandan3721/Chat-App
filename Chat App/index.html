@@ -1,0 +1,703 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Simplify communication with our sleek and user-friendly chat app.">
+    <meta name="keywords" content="chatapp , ChatApp Html css">
+    <meta name="author" content="Manikandan">
+
+    <title>Manikandan | Chat App</title>
+
+    <!-- Style -->
+    <link rel="stylesheet" href="./css/root.css">
+
+
+    <!-- App Favicon -->
+    <link rel="icon" type="image/ico" href="./assets/icons/favicon.ico">
+
+    <!-- Icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
+
+
+</head>
+
+<body>
+    <div class="app-container">
+        <aside class="app-left-menu">
+            <div class="logo-container">
+                <a href="#">
+                    <svg fill="var(--c-bg-primary)" xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                        viewBox="0 0 24 24">
+                        <path
+                            d="M8.5,18l3.5,4l3.5-4H19c1.103,0,2-0.897,2-2V4c0-1.103-0.897-2-2-2H5C3.897,2,3,2.897,3,4v12c0,1.103,0.897,2,2,2H8.5z M7,7h10v2H7V7z M7,11h7v2H7V11z">
+                        </path>
+                    </svg>
+                </a>
+            </div>
+            <div class="left-menu">
+                <ul class="menu-items">
+                    <li class="menu-item selected">
+                        <a href="#" class="menu-link">
+                            <i class='bx bx-user-circle'></i>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">
+                            <i class='bx bx-conversation'></i>
+                        </a>
+                    </li>
+                    <li class="menu-item ">
+                        <a href="#" class="menu-link">
+                            <i class='bx bxs-user-detail'></i>
+                        </a>
+                    </li>
+                    <li class="menu-item ">
+                        <a href="#" class="menu-link">
+                            <i class='bx bx-phone-call'></i>
+                        </a>
+                    </li>
+                    <li class="menu-item ">
+                        <a href="#" class="menu-link">
+                            <i class='bx bx-bookmarks'></i>
+                        </a>
+                    </li>
+                    <li class="menu-item ">
+                        <a href="#" class="menu-link">
+                            <i class='bx bx-cog'></i>
+                        </a>
+                    </li>
+                    <li class="menu-item  mt-auto">
+                        <a href="#" class="menu-link">
+                            <i class='bx bx-moon'></i>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">
+                            <img src="./assets/images/avatar-3.jpg" class="user-profile" alt="user-avatar">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+
+        <section class="chat-list-sidebar">
+            <div class="chat-list-header">
+                <div class="chat-title-container">
+                    <div class="FG-1">
+                        <h4 class="chat-title font-medium">
+                            Chats
+                        </h4>
+                    </div>
+                    <div>
+                        <a href="#" class="btn btn-primary">
+                            <i class='bx bx-plus plus-icons f13'></i>
+                        </a>
+                    </div>
+                </div>
+                <div class=" form-container">
+                    <input type="text" placeholder="Search here.." class="search-input">
+                    <button type="submit" class="btn search-btn">
+                        <i class='bx bx-search search-icon f16'></i>
+                    </button>
+                </div>
+            </div>
+            <div class="chat-list-container overflow-y">
+                <!-- Favorites -->
+                <div class="favorites-title container-title">
+                    <h3 class="font-medium">
+                        Favourites
+                    </h3>
+                </div>
+                <div>
+                    <ul class="user-lists">
+                        <li class="user-list-item">
+                            <a href="#" class="user-list-link  selected">
+                                <div class="chat-user-item">
+                                    <div class="user-avatar">
+                                        <img src="./assets/images/avatar-2.jpg" alt="user-avatar"
+                                            class="user-avatar-img">
+                                        <span class="user-status">
+                                        </span>
+                                    </div>
+                                    <div>
+                                        <h5 class="chat-user-name-text">
+                                            Bella Cote
+                                        </h5>
+                                    </div>
+                                    <div class="ml-auto">
+                                        <span class="unread-msg-count ">
+                                            18
+                                        </span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="user-list-item">
+                            <a href="#" class="user-list-link ">
+                                <div class="chat-user-item">
+                                    <div class="user-avatar">
+                                        <img src="./assets/images/avatar-3.jpg" alt="user-avatar"
+                                            class="user-avatar-img">
+                                        <span class="user-status">
+                                        </span>
+                                    </div>
+                                    <div>
+                                        <h5 class="chat-user-name-text">
+                                            Sahay
+                                        </h5>
+                                    </div>
+                                    <div class="ml-auto invisible">
+                                        <span class="unread-msg-count ">
+                                            18
+                                        </span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="user-list-item">
+                            <a href="#" class="user-list-link ">
+                                <div class="chat-user-item">
+                                    <div class="user-avatar">
+                                        <span class="user-label">
+                                            SH
+                                        </span>
+                                        <span class="user-status">
+                                        </span>
+                                    </div>
+                                    <div>
+                                        <h5 class="chat-user-name-text">
+                                            Sathish
+                                        </h5>
+                                    </div>
+                                    <div class="ml-auto invisible">
+                                        <span class="unread-msg-count ">
+                                            18
+                                        </span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="user-list-item">
+                            <a href="#" class="user-list-link ">
+                                <div class="chat-user-item">
+                                    <div class="user-avatar">
+                                        <img src="./assets/images/avatar-4.jpg" alt="user-avatar"
+                                            class="user-avatar-img">
+                                        <span class="user-status">
+                                        </span>
+                                    </div>
+                                    <div>
+                                        <h5 class="chat-user-name-text">
+                                            Priya
+                                        </h5>
+                                    </div>
+                                    <div class="ml-auto invisible">
+                                        <span class="unread-msg-count ">
+                                            18
+                                        </span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Direct Message -->
+                <div class="direct-msg-container">
+                    <div class="container-title FG-1">
+                        <h3 class="font-medium">
+                            Direct Messages
+                        </h3>
+                    </div>
+                    <button class="btn btn-primary ">
+                        <i class='bx bx-plus plus-icons f14'></i>
+                    </button>
+                </div>
+                <div>
+                    <ul class="user-lists">
+                        <li class="user-list-item">
+                            <a href="#" class="user-list-link  ">
+                                <div class="chat-user-item">
+                                    <div class="user-avatar">
+                                        <img src="./assets/images/avatar-5.jpg" alt="user-avatar"
+                                            class="user-avatar-img">
+                                        <span class="user-status">
+                                        </span>
+                                    </div>
+                                    <div>
+                                        <h5 class="chat-user-name-text">
+                                            Nicholas Staten
+                                        </h5>
+                                    </div>
+                                    <div class="ml-auto invisible">
+                                        <span class="unread-msg-count ">
+                                            18
+                                        </span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="user-list-item">
+                            <a href="#" class="user-list-link ">
+                                <div class="chat-user-item">
+                                    <div class="user-avatar">
+                                        <img src="./assets/images/avatar-6.jpg" alt="user-avatar"
+                                            class="user-avatar-img">
+                                        <span class="user-status">
+                                        </span>
+                                    </div>
+                                    <div>
+                                        <h5 class="chat-user-name-text">
+                                            Kathryn Swarey
+                                        </h5>
+                                    </div>
+                                    <div class="ml-auto">
+                                        <span class="unread-msg-count ">
+                                            18
+                                        </span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="user-list-item">
+                            <a href="#" class="user-list-link ">
+                                <div class="chat-user-item">
+                                    <div class="user-avatar">
+                                        <span class="user-label">
+                                            SJ
+                                        </span>
+                                        <span class="user-status">
+                                        </span>
+                                    </div>
+                                    <div>
+                                        <h5 class="chat-user-name-text">
+                                            Steven Jury
+                                        </h5>
+                                    </div>
+                                    <div class="ml-auto invisible">
+                                        <span class="unread-msg-count ">
+                                            18
+                                        </span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="user-list-item">
+                            <a href="#" class="user-list-link ">
+                                <div class="chat-user-item">
+                                    <div class="user-avatar">
+                                        <img src="./assets/images/avatar-7.jpg" alt="user-avatar"
+                                            class="user-avatar-img">
+                                        <span class="user-status">
+                                        </span>
+                                    </div>
+                                    <div>
+                                        <h5 class="chat-user-name-text">
+                                            Alissa
+                                        </h5>
+                                    </div>
+                                    <div class="ml-auto invisible">
+                                        <span class="unread-msg-count ">
+                                            18
+                                        </span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Channels -->
+                <div class="channel-container">
+                    <div class="container-title FG-1">
+                        <h3 class="font-medium">
+                            Channels
+                        </h3>
+                    </div>
+                    <a href="#" class="btn btn-primary ">
+                        <i class='bx bx-plus plus-icons f14'></i>
+                    </a>
+                </div>
+                <div>
+                    <ul class="channel-lists">
+                        <li class="channel-list-item">
+                            <a href="#" class="channel-list-link">
+                                <div class="chat-user-item">
+                                    <div class="channel-avatar">
+                                        <span class="channel-tag user-label">
+                                            #
+                                        </span>
+                                    </div>
+                                    <div class="channel-name">
+                                        <h5 class="font-sbold">
+                                            Zoho Development
+                                        </h5>
+                                    </div>
+                                    <div class="ml-auto ">
+                                        <span class="unread-msg-count ">
+                                            18
+                                        </span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="channel-list-item">
+                            <a href="#" class="channel-list-link">
+                                <div class="chat-user-item">
+                                    <div class="channel-avatar">
+                                        <span class="channel-tag user-label">
+                                            #
+                                        </span>
+                                    </div>
+                                    <div class="channel-name">
+                                        <h5>
+                                            Zoho Creator
+                                        </h5>
+                                    </div>
+                                    <div class="ml-auto invisible">
+                                        <span class="unread-msg-count ">
+                                            18
+                                        </span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="channel-list-item">
+                            <a href="#" class="channel-list-link">
+                                <div class="chat-user-item">
+                                    <div class="channel-avatar">
+                                        <span class="channel-tag user-label">
+                                            #
+                                        </span>
+                                    </div>
+                                    <div class="channel-name">
+                                        <h5 class="font-sbold">
+                                            Zoho CRM
+                                        </h5>
+                                    </div>
+                                    <div class="ml-auto ">
+                                        <span class="unread-msg-count ">
+                                            18
+                                        </span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <main class="chat-main">
+            <header class="chat-header">
+                <div class="chat-header-container">
+                    <div class="user-info-container">
+                        <div class="user-avatar">
+                            <img src="./assets/images/avatar-2.jpg" alt="user-avatar" class="user-avatar-img">
+                            <span class="user-status"></span>
+                        </div>
+                        <div class="user-info FG-1">
+                            <a href="#" class="user-link">
+                                <h2 class="user-name font-medium">
+                                    Bella Cote
+                                </h2>
+                            </a>
+                            <p class="status-text f13">
+                                Online
+                            </p>
+                        </div>
+                    </div>
+                    <div class="chat-options">
+                        <ul class="chat-options-items">
+                            <li class="chat-option-item">
+                                <a class="chat-option-link">
+                                    <i class='bx bx-search icons'></i>
+                                </a>
+                            </li>
+                            <li class="chat-option-item">
+                                <a href="#" class="chat-option-link">
+                                    <i class='bx bxs-phone-call icons'></i>
+                                </a>
+                            </li>
+                            <li class="chat-option-item">
+                                <a href="#" class="chat-option-link">
+                                    <i class='bx bx-video icons'></i>
+                                </a>
+                            </li>
+                            <li class="chat-option-item">
+                                <a href="#" class="chat-option-link">
+                                    <i class='bx bxs-info-circle icons'></i>
+                                </a>
+                            </li>
+                            <li class="chat-option-item">
+                                <a href="#" class="chat-option-link">
+                                    <i class='bx bx-dots-vertical-rounded icons'></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </header>
+            <section class="chat-body overflow-y">
+                <ul class="mt90 message-list">
+                    <li class="message-item user-received-message">
+                        <div class="user-profile-info">
+                            <div class="user-avatar">
+                                <img src="./assets/images/avatar-2.jpg" alt="user-avatar" class="user-avatar-img">
+                            </div>
+                            <div>
+                                <div class="message-container">
+                                    <div class="message-content">
+                                        <p class="message-text">
+                                            Good morning Bella &#128521;
+                                        </p>
+                                    </div>
+                                    <div class="message-action invisible">
+                                        <a href="#">
+                                            <i class="ri-more-2-fill icons"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="time-info">
+                                    <small class="time-stamp">
+                                        10:10 am
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="message-item user-sent-message">
+                        <div class="user-profile-info">
+                            <div>
+                                <div class="message-container">
+                                    <div class="message-action invisible">
+                                        <a href="#">
+                                            <i class="ri-more-2-fill icons"></i>
+                                        </a>
+                                    </div>
+                                    <div class="message-content">
+                                        <p class="message-text">
+                                            Good morning, How are you? What about our next meeting?
+                                        </p>
+                                    </div>
+
+                                </div>
+                                <div class="time-info">
+                                    <span class="success-icon">
+                                        <i class='bx bx-check-double '></i>
+                                    </span>
+                                    <small class="time-stamp">
+                                        10:15 am
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="message-item  user-received-message">
+                        <div class="user-profile-info">
+                            <div class="user-avatar">
+                                <img src="./assets/images/avatar-2.jpg" alt="user-avatar" class="user-avatar-img">
+                            </div>
+                            <div>
+                                <div class="message-container">
+                                    <div class="message-content">
+                                        <p class="message-text">
+                                            Yeah everything is fine. Our next meeting tomorrow at 10.00 AM
+                                        </p>
+                                    </div>
+                                    <div class="message-action invisible">
+                                        <a href="#">
+                                            <i class="ri-more-2-fill icons"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="message-container">
+                                    <div class="message-content">
+                                        <p class="message-text">
+                                            Hey, I'm going to meet a friend of mine at the department store. I have to
+                                            buy some presents for my parents &#10084; &#x2764; &#128521;.
+                                        </p>
+                                    </div>
+
+                                    <div class="message-action invisible">
+                                        <a href="#">
+                                            <i class="ri-more-2-fill icons"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="time-info">
+                                    <small class="time-stamp">
+                                        10:25 am
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="message-item user-sent-message">
+                        <div class="user-profile-info">
+                            <div>
+                                <div class="message-container">
+                                    <div class="message-action invisible">
+                                        <a href="#">
+                                            <i class="ri-more-2-fill icons"></i>
+                                        </a>
+                                    </div>
+                                    <div class="message-content">
+                                        <small class="message-text">
+                                            Nice! 👌
+                                        </small>
+                                    </div>
+
+                                </div>
+                                <div class="time-info">
+                                    <span class="success-icon">
+                                        <i class='bx bx-check-double '></i>
+                                    </span>
+                                    <small class="time-stamp">
+                                        10:30 am
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="message-item  user-received-message">
+                        <div class="user-profile-info">
+                            <div class="user-avatar">
+                                <img src="./assets/images/avatar-2.jpg" alt="user-avatar" class="user-avatar-img">
+                            </div>
+                            <div>
+                                <div class="message-container G-8">
+                                    <div class="user-chat-img pos_rel">
+                                        <a href="#" class="chat-img-link">
+                                            <img src="./assets/images/img-1.jpg" alt="user-image" class="chat-img">
+                                        </a>
+                                        <div>
+                                            <a href="#" class="chat-img-action">
+                                                <i class='bx bx-dots-horizontal-rounded'></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="user-chat-img pos_rel">
+                                        <a href="#" class="chat-img-link">
+                                            <img src="./assets/images/img-1.jpg" alt="user-image" class="chat-img">
+                                        </a>
+                                        <div>
+                                            <a href="#" class="chat-img-action">
+                                                <i class='bx bx-dots-horizontal-rounded'></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="time-info">
+                                    <small class="time-stamp">
+                                        10:10 am
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="message-item user-sent-message">
+                        <div class="user-profile-info">
+                            <div>
+                                <div class="message-container">
+                                    <div class="message-content">
+                                        <div class="pdf-container">
+                                            <div class="user-label attachment-icon">
+                                                <i class="ri-attachment-2"></i>
+                                            </div>
+                                            <div>
+                                                <h5 class="font-medium">
+                                                    design-phase-1-approved.pdf
+                                                </h5>
+                                                <p class="font-regular f13">
+                                                    12.5 MB
+                                                </p>
+                                            </div>
+                                            <div class="">
+                                                <a href="#" class="">
+                                                    <i class='bx bxs-download icons'></i>
+                                                </a>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="time-info">
+                                    <span class="success-icon">
+                                        <i class='bx bx-check-double '></i>
+                                    </span>
+                                    <small class="time-stamp">
+                                        10:30 am
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="message-item  user-received-message">
+                        <div class="user-profile-info">
+                            <div class="user-avatar">
+                                <img src="./assets/images/avatar-2.jpg" alt="user-avatar" class="user-avatar-img">
+                            </div>
+                            <div>
+                                <div class="message-container">
+                                    <div class="message-content">
+                                        <p class="message-text">
+                                            Good night sweet dreams Bella 😉
+                                        </p>
+                                    </div>
+                                    <div class="message-action invisible">
+                                        <a href="#">
+                                            <i class="ri-more-2-fill icons"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="time-info">
+                                    <small class="time-stamp">
+                                        10:50 am
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- footer -->
+            <footer class="chat-footer">
+                <div class="footer-container">
+                    <div class="footer-actions">
+                        <div class="footer-icons">
+                            <a href="#" class="footer-icons-link">
+                                <i class='bx bx-dots-horizontal-rounded '></i>
+                            </a>
+                        </div>
+                        <div class="footer-icons">
+                            <a href="#" class="footer-icons-link">
+                                <i class='bx bx-wink-smile '></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="FG-1">
+                        <input type="text" placeholder="Type your messages" class="form-control">
+                    </div>
+                    <div class="footer-actions">
+                        <div class="footer-icons">
+                            <a href="#" class="footer-icons-link">
+                                <i class='bx bx-microphone'></i>
+                            </a>
+                        </div>
+                        <div>
+                            <button type="submit" href="#" class="btn btn-secondary ">
+                                <i class='bx bxs-send f22'></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </main>
+    </div>
+
+</body>
+
+</html>

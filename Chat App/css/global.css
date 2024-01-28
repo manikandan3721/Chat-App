@@ -1,0 +1,30 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: unset;
+}
+
+body {
+    font-size: 10px;
+}
+
+h1 { font-size: 21px; }
+h2 { font-size: 18px; }
+h3 { font-size: 11px; }
+h4 { font-size: 21px; }
+h5 { font-size: 14px; }
+h6 { font-size: 21px; }
+
+ul li { list-style: none; }
+a { text-decoration: none; cursor: pointer; }
+
+.overflow-y {
+    overflow-y: auto;
+  }
+  
+::-webkit-scrollbar {
+    width: 5px;
+    display: none;
+  }

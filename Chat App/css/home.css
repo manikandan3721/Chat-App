@@ -1,0 +1,15 @@
+:root {
+    --w-sidebar-menu: 75px;
+    --w-chat-sidebar: 300px;
+    --br-radius-full: 50%;
+    --br-radius-sm: 3px;
+    --br-radius-lg: 6px;
+    --bx-shadow-sm: 0 2px 4px rgba(15,34,58,.12)
+}
+
+.app-container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+

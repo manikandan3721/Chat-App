@@ -1,0 +1,23 @@
+
+.D-flex { display: flex; }
+.FD-C { flex-direction: column; }
+.JC-C { justify-content: center; }
+.JC-E { justify-content: end; }
+.AI-C { align-items: center; }
+.AI-FS { align-items: flex-start; }
+.AI-FE { align-items: flex-end; }
+
+.FG-1 { flex-grow: 1; }
+.FG-0 { flex-grow: 0; }
+
+.AS-C { align-self: center; }
+.AS-E { align-self: end; }
+
+.G-4 { gap: 5px; }
+.G-5 { gap: 5px; }
+.G-8 { gap: 8px; }
+.G-10 { gap: 5px; }
+.G-15 { gap: 5px; }
+.G-16 { gap: 5px; }
+.G-18 { gap: 5px; }
+
